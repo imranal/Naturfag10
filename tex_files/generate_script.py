@@ -17,8 +17,9 @@ os.system(cmd1+filename)
 os.system(cmd1+filename)
 
 cmd3 = "mv "
-destination = "../pdf_files/"
+destination = "../"
 os.system(cmd3+filename+".pdf "+destination)
+os.system(cmd3+destination+filename+".pdf "+"../Naturfag.pdf")
 
 cmd4 = "rm "
 extensions = filename+".aux "+filename+".log "+filename+".out "+filename+".bbl "+filename+".blg "+\

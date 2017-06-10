@@ -3,8 +3,6 @@
 \usepackage{a4}
 \usepackage[margin=0.9in]{geometry}
 \usepackage{pdfpages}
-\usepackage{apacite}
-\usepackage{jneurosci}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[norsk]{babel}
@@ -21,6 +19,8 @@
 \usepackage{csquotes}
 \usepackage{epigraph}
 \usepackage{ragged2e}
+\usepackage{array}
+\usepackage{enumitem}
 
 \MakePerPage{footnote} %the perpage package command
 
@@ -49,13 +49,23 @@
 
 \tableofcontents
 
+\newpage
+\subfile{forord}
+\addcontentsline{toc}{section}{Forord}
+\newpage
 \subfile{chapter1}
-
-%\subfile{chapter2}
-
-%\subfile{chapter3}
-
-%\subfile{chapter4}
+\newpage
+\subfile{chapter2}
+\newpage
+\subfile{chapter3}
+\newpage
+\subfile{chapter4}
+\newpage
+\subfile{chapter5}
+\newpage
+\subfile{chapter6}
+\newpage
+\subfile{chapter7}
 
 % Biblography
 \newpage\null
