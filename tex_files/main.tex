@@ -3,6 +3,7 @@
 \usepackage{a4}
 \usepackage[margin=0.9in]{geometry}
 \usepackage{pdfpages}
+\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[norsk]{babel}
@@ -21,6 +22,20 @@
 \usepackage{ragged2e}
 \usepackage{array}
 \usepackage{enumitem}
+\usepackage{rotating}
+\usepackage[export]{adjustbox}
+
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
 
 \MakePerPage{footnote} %the perpage package command
 
