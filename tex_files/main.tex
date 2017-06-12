@@ -2,7 +2,8 @@
 
 \usepackage{a4}
 \usepackage[margin=0.9in]{geometry}
-\usepackage{pdfpages}
+\usepackage[dvipsnames]{xcolor}
+%\usepackage{pdfpages}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -24,7 +25,6 @@
 \usepackage{enumitem}
 \usepackage{rotating}
 \usepackage[export]{adjustbox}
-
 
 \newenvironment{changemargin}[2]{%
 \begin{list}{}{%
@@ -63,6 +63,10 @@
 \pagenumbering{arabic} 
 
 \tableofcontents
+
+\listoffigures
+ 
+\listoftables
 
 \newpage
 \subfile{forord}
